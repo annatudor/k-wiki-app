@@ -3,13 +3,14 @@ import { AppBar, Toolbar, InputBase, Button } from "@mui/material";
 import { Search as SearchIcon } from "@mui/icons-material";
 //import { Link } from "react-router-dom";
 import "./styles/Navbar.css";
+import Logo from "./images/logo.png";
 
 export default function Navbar() {
   return (
     <AppBar position="static" className="navbar">
       <Toolbar className="toolbar">
         <div className="logo">
-          <img src="/logo.png" alt="Website Logo" className="logo-image" />
+          <img src={Logo} alt="Website Logo" className="logo-image" />
         </div>
 
         <div className="search-bar">

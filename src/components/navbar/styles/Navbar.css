@@ -1,10 +1,12 @@
 .navbar {
+  display: flex;
   position: fixed !important;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1100;
   width: 100% !important;
+  height: 64px;
   background: linear-gradient(
     to bottom,
     rgba(88, 74, 74, 0.8),
@@ -24,11 +26,19 @@
 .logo {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .logo-image {
-  height: 40px;
+  margin-top: 5px;
+  height: 60px;
   width: auto;
+  max-height: 150px !important;
+  transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+  transform: scale(1.05);
 }
 
 .search-bar {
@@ -41,7 +51,7 @@
   max-width: 500px;
   transition: all 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border: 2.5px solid #ffffff;
+  border: 2px solid #ffffff;
 }
 
 .search-bar:hover {
@@ -59,6 +69,12 @@
   margin-right: 8px;
   margin-left: 8px;
   margin-top: 5px;
+  transition: transform 0.3s ease;
+}
+
+.search-bar:focus-within .search-icon {
+  transform: scale(1.1);
+  color: #000000 !important;
 }
 
 .search-input {
