@@ -1,0 +1,64 @@
+.sidebar-drawer {
+  width: 90px;
+  outline: none !important;
+  border-right: none !important;
+}
+
+.sidebar-drawer .MuiDrawer-paper {
+  width: 90px;
+  box-sizing: border-box;
+  background: linear-gradient(
+    to top,
+    rgba(88, 74, 74, 0.8),
+    rgba(255, 255, 255, 0)
+  ) !important;
+  margin-top: 64px;
+  border-right: none !important;
+}
+
+.sidebar-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.sidebar-icon {
+  color: white !important;
+  min-width: auto !important;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.sidebar-text {
+  color: white;
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  transition: color 0.3s ease;
+}
+
+.sidebar-button:hover .sidebar-icon,
+.sidebar-button:focus .sidebar-icon {
+  color: rgba(88, 74, 74, 0.8) !important;
+}
+
+.sidebar-button:hover .sidebar-text,
+.sidebar-button:focus .sidebar-text {
+  color: rgba(88, 74, 74, 0.8) !important;
+}
