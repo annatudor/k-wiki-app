@@ -1,42 +1,60 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.navbar {
+  background: linear-gradient(
+    to bottom,
+    rgba(88, 74, 74, 0.8),
+    /* Alb semi-transparent */ rgba(255, 255, 255, 0) /* Complet transparent */
+  ) !important; /* Culoare albastră */
+  outline: none !important;
+  box-shadow: none !important;
 }
 
+/* Stilizare pentru containerul interior */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+/* Stilizare pentru logo */
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  display: flex;
+  align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-image {
+  height: 40px; /* Înălțimea imaginii */
+  width: auto; /* Lățimea se ajustează automat */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Stilizare pentru câmpul de căutare */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 4px 8px;
+  width: 40%; /* Lățimea câmpului de căutare */
 }
 
-.card {
-  padding: 2em;
+.search-icon {
+  color: #5f6368; /* Culoare gri pentru iconiță */
+  margin-right: 8px;
 }
 
-.read-the-docs {
-  color: #888;
+.search-input {
+  flex: 1; /* Ocupă tot spațiul rămas */
+}
+
+/* Stilizare pentru link-uri și butoane */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Spațiu între butoane */
+}
+
+.nav-button {
+  color: white; /* Culoare text alb */
+  text-transform: none; /* Fără transformare în majuscule */
+  font-weight: 500; /* Text îngroșat */
 }
